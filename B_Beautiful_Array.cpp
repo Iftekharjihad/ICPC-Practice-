@@ -13,33 +13,24 @@ int main(){
         cin >> n >> k >> b >> s;
         vector<ll> ans(n,0);
         ll mul = k*b;
-        if(mul < s){
+        if(s < mul){
             cout << -1 << endl;
             continue;
         }
-        if(mul == s){
-            ans[n-1] = mul;
-            for(auto x : ans){
-                cout << x << " ";
-            }
-            cout << endl;
+        ll diff = s - mul;
+        if(diff > (k-1)*n){
+            cout << -1 << endl;
+            continue;
         }
-        else{
-            ll diff = s - mul;
-            if(diff > (k-1)*n){
-                cout << -1 << endl;
-                continue;
-            }
-            else{
-                ans[0] = mul;
-                ll idx = 1,cur = diff,val = k-1;
-                while(cur > 0){
-                    ans[idx] = val;
-                    cur -= val;
-                    idx++;
-                }
-            }
+        ans[0] = mul;
+        ll idx = 0;
+        while(diff > 0 && idx < n){
+            ll take = min(diff,k-1);
+            ans[idx] += take;
+            diff -= take;
+            idx++;
         }
+        
         for(auto x : ans){
             cout << x << " ";
         }
