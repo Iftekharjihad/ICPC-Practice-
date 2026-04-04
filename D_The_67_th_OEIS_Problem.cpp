@@ -2,6 +2,11 @@
 using namespace std;
 #define ll long long
 
+// ll lcm(ll a,ll b){
+//     if(a == 0 || b == 0)return 0;
+//     return (a / __gcd(a,b)) * b;
+// }
+
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
@@ -11,13 +16,10 @@ int main(){
     while(t--){
         int n;
         cin >> n;
-        int ans = 0;
         for(int i = 1; i <= n; i++){
-            int x;
-            cin >> x;
-            if(x <= i)ans++;
+            cout << 1LL*i*(i+1) << " ";
         }
-        cout << ans << endl;
+        cout << endl;
     }
     
       
