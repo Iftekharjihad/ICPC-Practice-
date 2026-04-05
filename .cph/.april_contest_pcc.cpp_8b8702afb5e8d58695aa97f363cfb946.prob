@@ -1,0 +1,1 @@
+{"name":"Local: april_contest_pcc","url":"d:\\.d\\CP\\ICPC Preli\\april_contest_pcc.cpp","tests":[{"id":1775382202679,"input":"5\n1 5\n1 7\n1 8\n2 7\n1 3\n","output":"1\n2\n3\n1\n2\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\.d\\CP\\ICPC Preli\\april_contest_pcc.cpp","group":"local","local":true}
