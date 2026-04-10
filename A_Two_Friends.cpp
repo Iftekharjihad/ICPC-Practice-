@@ -11,20 +11,11 @@ int main(){
     while(t--){
         int n;
         cin >> n;
-        vector<int> a(n+1);
+        vector<int> a(51,0);
+        int ans = 3;
         for(int i = 1; i <= n; i++){
             cin >> a[i];
-        }
-        int su = a[n];
-        int ans = n;
-        for(int i = n-1; i >= 1; i--){
-            int com = su/2;
-            if(a[i] <= com){
-                ans = i;
-            }
-            else{
-                break;
-            }
+            if(a[a[i]] == i)ans = 2; 
         }
         cout << ans << endl;
     }
