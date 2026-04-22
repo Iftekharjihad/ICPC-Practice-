@@ -12,12 +12,8 @@ int main(){
         ll x,y;
         cin >> x >> y;
         ll n = y/x;
-        if(n > 2){
-            cout << "YES" << endl;
-        }
-        else{
-            cout << "NO" << endl;
-        }
+        if(n > 2)cout << "YES" << endl;
+        else cout << "NO" << endl;
     }
     
       
