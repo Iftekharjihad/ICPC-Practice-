@@ -21,8 +21,8 @@ int main(){
             for(int j = 0; j < n; j+=k){
                 cout << a[i][j];
             }
+            cout << endl;
         }
-        cout << endl;
     }
     
       
