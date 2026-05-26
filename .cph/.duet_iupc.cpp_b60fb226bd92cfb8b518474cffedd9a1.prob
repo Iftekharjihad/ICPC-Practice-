@@ -1,0 +1,1 @@
+{"name":"Local: duet_iupc","url":"d:\\.d\\CP\\ICPC Preli\\duet_iupc.cpp","tests":[{"id":1779817181730,"input":"2\n2\nab\n7\nabababc","output":"YES\nNO\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\.d\\CP\\ICPC Preli\\duet_iupc.cpp","group":"local","local":true}
