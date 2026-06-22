@@ -9,18 +9,15 @@ int main(){
     int t;
     cin >> t;
     while(t--){
+        int n;
+        cin >> n;
         string s;
         cin >> s;
-        stack<char> st;
+        set<char> st;
         for(auto c : s){
-            if(!st.empty() && st.top() == c){
-                st.pop();
-            }
-            else{
-                st.push(c);
-            }
+            st.insert(c);
         }
-        if(st.empty())cout << "YES" << endl;
+        if(st.size() == n)cout << "YES" << endl;
         else cout << "NO" << endl;
     }
     
